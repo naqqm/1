@@ -1,0 +1,70 @@
+<div class="carousel">
+    <button class="previous">&#10094;</button> <!-- Кнопка "Назад" -->
+    <button class="next">&#10095;</button> <!-- Кнопка "Вперед" -->
+    <div class="carousel-inner">
+        <div class="carousel-item active"> <!-- Добавлено active для первого слайда -->
+            <img src="images/jpg - png/abandoned_ferret.jpg" alt="">
+            <div class="item"> <!-- item внутри carousel-item -->
+                <p>
+                    Описание: Гулял с девушкой по ЦПКиО и обнаружили эту малышку около бордюра. Дата, когда было
+                    найдено
+                    животное: 03.10.23 Имя нашедшего: Аркадий
+                </p>
+                <button class="btn">Подробнее</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/jpg - png/cat_in_winter.jpg" alt="">
+            <div class="item">
+                <p>
+                    Описание: Шла сегодня после работы и обнаружила этого красавца. Дата, когда было найдено
+                    животное:
+                    21.12.23 Имя нашедшего: Ангелина
+                </p>
+                <button class="btn">Подробнее</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/jpg - png/dog_in_winter.jpg" alt="">
+            <div class="item">
+                <p>
+                    Описание: Пока шёл на свидание, заметил эту собаку в районе Мервино. Дата, когда было найдено
+                    животное: 13.01.24 Имя нашедшего: Анатолий
+                </p>
+                <button class="btn">Подробнее</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/jpg - png/guinea_pig.jpeg" alt="">
+            <div class="item">
+                <p>
+                    Описание: Во время прогулки с друзьями заметили её около забора, жевавшую траву. Дата, когда
+                    было
+                    найдено животное: 14.07.23 Имя нашедшего: Каролина
+                </p>
+                <button class="btn">Подробнее</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/jpg - png/sad_cat_on_bench.jpg" alt="">
+            <div class="item">
+            <p>
+                    Описание: Лазили с друзьями по деревьям и согнали этого четвероногова с одного и зних. Дата,
+                    когда
+                    было найдено животное: 14.04.23 Имя нашедшего: Мирослав
+                </p>
+                 <button class="btn">Подробнее</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/jpg - png/one_abandoned_cat_near_tree.jpg" alt="">
+            <div class="item">
+            <p>
+                    Описание: Замечаю эту кошку уже третий день подряд на этом месте. Возможно любила сидеть здесь
+                    вместе с хозяином. Дата, когда было найдено животное: 19.10.23 Имя нашедшего: Николай
+                </p>
+                 <button class="btn">Подробнее</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat/Montserrat-MediumItalic.ttf) format 'ttf';
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    /**
+      Пригодится в большинстве ситуаций
+      (когда, например, нужно будет "прижать" футер к низу сайта)
+     */
+    height: 100%;
+    /**
+      Плавный скролл
+     */
+    scroll-behavior: smooth;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    font-family: 'Montserrat';
+}
+
+
+
+/*переменные для изменения документа*/
+:root {
+    --color-text: #000000;
+    --color-a-hover: #8fc05f;
+    --color-border: #000000;
+    --background-color: #e3f9dc;
+    --color-btn: #ffffff;
+    --color-h: #ffffff;
+    --color-footer: #d6edbe;
+
+    --border-radius: 50%;
+    --border-radius-registr: 50px;
+    --border: 2px solid var(--color-border);
+
+    --font-family-base: 'Montserrat', sans-serif;
+    --font-family-accent: sans-serif;
+
+    --input-height: 54px;
+
+    /* --container-width: 1300px; */
+    --container-padding-x: 15px;
+
+    --transition-duration: 0.2s;
+}
+
+body {
+    font-family: var(--font-family-base);
+    color: var(--color);
+    background-color: var(--background-color);
+    /**
+      Пригодится в большинстве ситуаций
+      (когда, например, нужно будет "прижать" футер к низу сайта)
+     */
+    min-height: 100%;
+
+}
+
+.logo-img {
+    border-radius: var(--border-radius);
+    border: var(--border);
+    margin: 20px;
+    flex-shrink: 0;
+    /*без искажения пропорций*/
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+a:hover {
+    color: var(--color-a-hover);
+}
+
+a,
+button,
+input,
+textarea svg * {
+    transition-duration: var(--transition-duration);
+}
+
+.container{
+    display: flex;
+}
+
+.user-profile {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-info, .user-ads {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .info-item {
+    margin-bottom: 10px;
+  }
+  
+  .user-ads .ad-group {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .ad-group.active {
+    background-color: #e0f7fa; 
+  }
+  
+  .ad-group.moderating {
+    background-color: #fff2e6; 
+  }
+  
+  .ad-group.found {
+    background-color: #d0f0c0; 
+  }
+  
+  .ad-group.archived {
+    background-color: #f0f0f0; 
+  }
+  
+  .ad-item {
+    margin-bottom: 5px;
+  }
+  
+  .ad-item img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+    float: left;
+  }
+  
+  .ad-item .ad-info {
+    overflow: hidden;
+  }
+  
+  
+  .ad-actions {
+      margin-top: 5px;
+  }
+  
+  .ad-actions button {
+      margin-right: 5px;
+  }
+
+
+  .footer-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: column;
+}
+
+.footer-connection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 40px;
+    margin-bottom: 40px;
+}
+
+.actions-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.registration-footer {
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+    padding-inline: 26px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    background: var(--color-btn);
+    border-radius: var(--border-radius-registr);
+    border: var(--border);
+    font-family: var(--font-family-base);
+    margin-right: 30px;
+    margin: 40px;
+}
+
+.registration-footer:hover {
+    background-color: var(--color-a-hover);
+}
+
+footer {
+    bottom: 0;
+    background-color: var(--color-footer);
+    margin-top: 30px;
+    border: var(--border);
+    height: 60%;
+}

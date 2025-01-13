@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat/Montserrat-MediumItalic.ttf) format 'ttf';
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    /**
+      Пригодится в большинстве ситуаций
+      (когда, например, нужно будет "прижать" футер к низу сайта)
+     */
+    height: 100%;
+    /**
+      Плавный скролл
+     */
+    scroll-behavior: smooth;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    font-family: 'Montserrat';
+}
+
+
+
+/*переменные для изменения документа*/
+:root {
+    --color-text: #000000;
+    --color-a-hover: #8fc05f;
+    --color-border: #000000;
+    --background-color: #e3f9dc;
+    --color-btn: #ffffff;
+    --color-h: #ffffff;
+    --color-footer: #d6edbe;
+
+    --border-radius: 50%;
+    --border-radius-registr: 50px;
+    --border: 2px solid var(--color-border);
+
+    --font-family-base: 'Montserrat', sans-serif;
+    --font-family-accent: sans-serif;
+
+    --input-height: 54px;
+
+    --container-padding-x: 15px;
+
+    --transition-duration: 0.2s;
+}
+
+body {
+    font-family: var(--font-family-base);
+    color: var(--color);
+    background-color: var(--background-color);
+    min-height: 100%;
+
+}
+
+a,
+button,
+input,
+textarea svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+a:hover{
+    color: var(--color-a-hover);
+}
+
+.login-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    border: var(--border);
+    border-radius: var(--border-radius-registr);
+}
+
+.login-btn{
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    border: var(--border);
+    border-radius: var(--border-radius-registr);
+    background-color: var(--color-footer);
+}
+
+.login-btn:hover{
+    background-color: var(--color-a-hover);
+}
+
+.footer-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: column;
+}
+
+.footer-connection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo-img {
+    border-radius: var(--border-radius);
+    border: var(--border);
+    margin: 20px;
+    flex-shrink: 0;
+    /*без искажения пропорций*/
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 40px;
+    margin: 40px;
+}
+
+.actions-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.registration-footer {
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+    padding-inline: 26px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    background: var(--color-btn);
+    border-radius: var(--border-radius-registr);
+    border: var(--border);
+    font-family: var(--font-family-base);
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+.registration-footer:hover {
+    background-color: var(--color-a-hover);
+}
+
+footer {
+    bottom: 0;
+    background-color: var(--color-footer);
+    margin-top: 30px;
+    border: var(--border);
+    height: 60%;
+}
+
+@media (max-width: 468px){
+    .registration-footer {
+        display: inline-flex;
+        align-items: center;
+        height: 30px;
+        padding-inline: 13px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        background: var(--color-btn);
+        border-radius: var(--border-radius-registr);
+        border: var(--border);
+        font-family: var(--font-family-base);
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
+
+    .logo-img {
+        border-radius: var(--border-radius);
+        border: var(--border);
+        margin: 10px;
+        flex-shrink: 0;
+        /*без искажения пропорций*/
+    }
+}

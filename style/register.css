@@ -63,7 +63,7 @@ body {
     font-family: var(--font-family-base);
     color: var(--color);
     background-color: var(--background-color);
-    min-height: 100%;
+    min-height: 100vh;
 
 }
 
@@ -79,15 +79,15 @@ a {
     color: var(--color-text);
 }
 
-a:hover{
+a:hover {
     color: var(--color-a-hover);
 }
 
-.checkbox-email{
+.checkbox-email {
     margin-left: 25px;
 }
 
-.assent{
+.assent {
     font-size: 10px;
 }
 
@@ -101,7 +101,7 @@ a:hover{
     align-content: center;
 }
 
-.error-messages{
+.error-messages {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,7 +110,7 @@ a:hover{
     margin: 30px
 }
 
-.login-form{
+.login-form {
     display: flex;
     flex-direction: column;
     width: min-content;
@@ -118,7 +118,7 @@ a:hover{
     align-items: center;
 }
 
-.input{
+.input {
     width: 300px;
     margin: 10px;
     padding: 15px;
@@ -126,7 +126,7 @@ a:hover{
     border-radius: var(--border-radius-registr);
 }
 
-.login-btn{
+.login-btn {
     font-size: 15px;
     width: 300px;
     margin: 10px;
@@ -136,7 +136,7 @@ a:hover{
     background-color: var(--color-footer);
 }
 
-.login-btn:hover{
+.login-btn:hover {
     background-color: var(--color-a-hover);
 }
 
@@ -205,13 +205,36 @@ footer {
     background-color: var(--color-footer);
     margin-top: 30px;
     border: var(--border);
-    height: 70%;
+    min-height: 30%;
 }
 
-@media (max-width: 468px){
-    .registration-footer {
-        display: inline-flex;
+@media (max-width: 360px) {
+
+    .actions-footer {
+        width: 100%;
+        display: flex;
         align-items: center;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .registration-footer {
+        height: 30px;
+        padding-inline: 10px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        background: var(--color-btn);
+        border-radius: var(--border-radius-registr);
+        border: var(--border);
+        font-family: var(--font-family-base);
+    }
+}
+
+@media (max-width: 468px) {
+    .registration-footer {
         height: 30px;
         padding-inline: 10px;
         font-weight: 700;
@@ -232,17 +255,5 @@ footer {
         margin: 10px;
         flex-shrink: 0;
         /*без искажения пропорций*/
-    }
-}
-
-@media (max-width:  1000px ) {
-    .error-messages{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: 12px;
-        background-color: var(--color-footer);
-        margin: 10px
     }
 }
